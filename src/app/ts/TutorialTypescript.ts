@@ -55,3 +55,10 @@ type MyBool = true | false;
 function getTime(): number {
   return new Date().getTime();
 }
+
+let data: number[] = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+let testData = data
+  .filter(i => i > 2)
+  .map(i => i * 2)
+  .reduce((a, b) => a + b);
+console.log(testData);

@@ -58,3 +58,11 @@ const weekdays = new Map([["Mon", 0], ["Tue", 1], ["Wed", 2], ["Thu", 3], ["Fri"
 const newYearsEve = new Date(1999, 11, 31, 23, 59)
 newYearsEve.toLocaleString('de')
 
+from([1,2,3,4,5])
+  .subscribe({
+    next: number => console.log(number),
+    error: error => console.error(error),
+    complete: () => console.log('complete')
+  });
+
+
